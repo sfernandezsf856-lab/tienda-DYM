@@ -1,0 +1,214 @@
+/* ==========================================
+   1. RESET GENERAL (Unos y Ceros)
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000000; /* Fondo negro de búnker para toda la web */
+    color: #ffffff;
+}
+
+/* ==========================================
+   2. CABECERA (Barra de Navegación Móvil)
+   ========================================== */
+.app-header {
+    background-color: #111111;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #222;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Ajuste del tamaño del logo de neón */
+.logo-img {
+    width: 150px; /* Tamaño de 150px que te gusta */
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.5)); /* Efecto neón sutil */
+     animation: zoomPulsante 4s ease-in-out infinite;
+    transition: transform 0.3s ease;
+}
+.logo-img:hover {
+    transform: scale(1.15) rotate(2deg); /* Se agranda un toque más y gira sutilmente */
+    filter: drop-shadow(0 0 12px #00ffcc); /* El neón se enciende en verde brillante */
+    cursor: pointer;
+}
+    @keyframes zoomPulsante {
+    0% {
+        transform: scale(1); /* Tamaño normal */
+    }
+    50% {
+        transform: scale(1.08); /* Hace un zoom suave hacia adelante */
+    }
+    100% {
+        transform: scale(1); /* Vuelve al tamaño original */
+    }
+}
+/* ==========================================
+   3. SECCIONES GENERALES (Buscador e Info)
+   ========================================== */
+.search-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #000000;
+}
+
+#search-input {
+    width: 90%;
+    max-width: 500px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 1px solid #333;
+    background-color: #111111;
+    color: white;
+    font-size: 16px;
+}
+
+.shipping-info {
+    text-align: center;
+    padding: 10px;
+    background-color: #111111;
+    color: #00ffcc;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ==========================================
+   4. GRILLA DE PRODUCTOS (Catálogo Adaptable)
+   ========================================== */
+.products-grid {
+    display: grid;
+    /* Se acomodan en filas y columnas automáticas según el tamaño de la pantalla */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    padding: 30px 20px;
+    background-color: #000000;
+    perspective: 1000px; 
+}
+
+.product-card {
+    background-color: #111111; /* Fondo oscuro para que resalte el texto */
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+     transform-style: preserve-3d; /* Le avisa a Windows que este objeto maneja volumen */
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-img {
+    width: 100%;
+    max-width: 180px;
+    height: 180px;
+    object-fit: cover; /* Evita que las fotos se deformen */
+    border-radius: 8px;
+    background-color: #222; /* Fondo gris grisáceo mientras no carga la foto */
+    margin-bottom: 15px;
+}
+
+.product-info h3 {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    min-height: 40px; /* Mantiene los títulos alineados */
+}
+
+.price {
+    color: #00ffcc; /* Color verde neón para destacar el precio */
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.add-to-cart-btn {
+    background-color: #00ffcc;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.add-to-cart-btn:hover {
+    transform: scale(1.03);
+    background-color: #00d4b0;
+}
+
+/* ==========================================
+   5. SECCIÓN BOTONES DE WHATSAPP
+   ========================================== */
+.whatsapp-section {
+    background-color: #111111;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #222;
+}
+
+.whatsapp-section h2 {
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.whatsapp-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    max-width: 290px;
+    background-color: #25D366; /* Verde oficial de WhatsApp */
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.05);
+    background-color: #20ba5a; /* Un verde un toque más oscuro al pasar el mouse */
+}
+.product-card:hover {
+    transform: rotateY(15deg) translateZ(10px); /* La tarjeta gira hacia adelante con volumen */
+    box-shadow: 0 10px 25px rgba(0, 255, 204, 0.2); /* Sombra neón tridimensional */
+}
