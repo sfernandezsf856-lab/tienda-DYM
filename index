@@ -352,7 +352,7 @@
 </div>
 <!-- TARJETA 41 : TERMO INVICTA TOP WAVE-->
  <div class="product-card">
-    <img src="img/Bazar/termo invicta top wave.png" alt="Térmo Invicta Top Wave" class="product-img">
+    <img src="img/Bazar/Termo Invicta top wave.png" alt="Térmo Invicta Top Wave" class="product-img">
      <h3>Térmo Invicta Top Wave</h3>
     <p class="price">$12.000</p>
     <button class="add-to-cart-btn">Agregar al Carrito</button>
@@ -423,7 +423,7 @@
     </footer>
 
     <!-- Tu cable de lógica en JavaScript -->
-  <script src="/assets/js/app.js"></script>
+ <script src="assets/js/app.js"></script>
      <!-- 🛒 VENTANA FLOTANTE DEL CARRITO (CONECTADA CON TUS 3 VENDEDORAS) -->
 <div id="modal-carrito" style="display: none; position: fixed; top: 0; right: 0; width: 100%; max-width: 400px; height: 100%; background: #111; border-left: 2px solid #00ffcc; z-index: 10000; box-shadow: -5px 0 15px rgba(0,0,0,0.5); flex-direction: column; padding: 20px; color: white; overflow-y: auto;">
     
