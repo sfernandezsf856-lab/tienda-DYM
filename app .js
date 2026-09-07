@@ -67,3 +67,4 @@ function obtenerSiguienteWhatsApp() {
 }
 fetch('/api/user-data')
   .then(response => response.json());
+import logo from './logo.svg';
