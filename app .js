@@ -65,3 +65,5 @@ function obtenerSiguienteWhatsApp() {
     
     return númerosWhatsApp[indiceActual];
 }
+fetch('/api/user-data')
+  .then(response => response.json());
