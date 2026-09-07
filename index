@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Casa del Hogar DYM - Tienda Oficial</title>
-    <link rel="stylesheet" href="styles.css">
      <link rel="stylesheet" href="css/styles.css"> 
       <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
@@ -425,7 +424,7 @@
     </footer>
 
     <!-- Tu cable de lógica en JavaScript -->
- <script src="js/app.js"></script>
+ <script src="/scripts/main.js"></script>
      <!-- 🛒 VENTANA FLOTANTE DEL CARRITO (CONECTADA CON TUS 3 VENDEDORAS) -->
 <div id="modal-carrito" style="display: none; position: fixed; top: 0; right: 0; width: 100%; max-width: 400px; height: 100%; background: #111; border-left: 2px solid #00ffcc; z-index: 10000; box-shadow: -5px 0 15px rgba(0,0,0,0.5); flex-direction: column; padding: 20px; color: white; overflow-y: auto;">
     
