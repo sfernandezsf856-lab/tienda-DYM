@@ -53,3 +53,7 @@ const númerosWhatsApp = [
     "5491153199192"  // Cuñada
 ];
 
+fetch('/api/v1/users') 
+  .then(res => console.log(res.status));
+  const imgUrl = './images/logo.png'; 
+  
