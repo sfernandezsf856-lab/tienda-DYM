@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Casa del Hogar DYM - Tienda Oficial</title>
      <link rel="stylesheet" href="styles.css">
-      <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
 
@@ -28,6 +27,10 @@
         <!-- Sección del Buscador -->
         <section class="search-section">
             <input type="text" placeholder="¿Qué estás buscando hoy?" id="search-input">
+            <div class="catalog-toolbar" aria-label="Filtros del catálogo">
+                <div id="category-filters" class="category-filters" role="group" aria-label="Categorías"></div>
+                <p id="results-summary" class="results-summary" aria-live="polite"></p>
+            </div>
         </section>
 <!-- SECCIÓN: BIENVENIDA Y DESCRIPCIÓN DEL POLIRUBRO -->
 <section class="about-section" style="text-align: center; padding: 30px 20px; background-color: #000;">
@@ -69,7 +72,6 @@
      <p class="price">$13.000</p>
      <button class="add-to-cart-btn">Agregar al Carrito</button>
   </div>
-</div>
 
 <!-- TARJETA 2: MARCADORES TOUCH X 48 -->
 <div class="product-card">
@@ -78,7 +80,6 @@
      <p class="price">$16.000</p>
      <button class="add-to-cart-btn">Agregar al Carrito</button>
   </div>
-</div>
 <!-- TARJETA 3: MARCADORES TOUCH X 60 -->
 <div class="product-card">
      <img src="img/Libreria/touch 60.png" alt="Marcadores Touch x 60" class="product-img">
@@ -86,7 +87,6 @@
      <p class="price">$20.000</p>
      <button class="add-to-cart-btn">Agregar al Carrito</button>
  </div>
-</div>
 
 <!-- TARJETA 4: MARCADORES TOUCH X 80 -->
 <div class="product-card">
@@ -95,7 +95,6 @@
      <p class="price">$25.000</p>
      <button class="add-to-cart-btn">Agregar al Carrito</button>
   </div>
-</div>
 
 <!-- TARJETA 5: LÁPICES FILGO X 24 -->
 <div class="product-card">
@@ -104,7 +103,6 @@
       <p class="price">$5.200</p>
       <button class="add-to-cart-btn">Agregar al Carrito</button>
   </div>
-</div>
 <!-- TARJETA 6: DESLINIADOR -->
 <div class="product-card">
     <img src="img/Cosmetologia/desliniador.png" alt="deslinador" class="product-img">
@@ -190,170 +188,149 @@
     <p class="price">$29.000</p>
     <button class="add-to-cart-btn">Agregar al Carrito</button>
 </div>
-<!-- TARJETA 18: BOLSO UNIVERSITARIO-->
- <div class="product-card">
-    <img src="img/Marroquineria/bolso universitario (2).png" alt="Bolso Universitario" class="product-img">
-     <h3>Bolso Universitario</h3>
-    <p class="price">$29.000</p>
-    <button class="add-to-cart-btn">Agregar al Carrito</button>
-</div>
-<!-- TARJETA 19: BOLSO -->
- <div class="product-card">
-    <img src="img/Marroquineria/bolso.png" alt="Bolso Neceser" class="product-img">
-     <h3>Bolso Neceser</h3>
-    <p class="price">$12.000</p>
-    <button class="add-to-cart-btn">Agregar al Carrito</button>
-</div>
-<!-- TARJETA 20: BOLSO NECESER-->
- <div class="product-card">
-    <img src="img/Marroquineria/bolsos neceser.png" alt="Bolso Neceser" class="product-img">
-     <h3>Bolso Neceser</h3>
-    <p class="price">$12.000</p>
-    <button class="add-to-cart-btn">Agregar al Carrito</button>
-</div>
-<!-- TARJETA 21: CARTERA -->
+<!-- TARJETA 18: CARTERA -->
  <div class="product-card">
     <img src="img/Marroquineria/cartera.png" alt="Cartera" class="product-img">
      <h3>Cartera</h3>
     <p class="price">$40.000</p>
     <button class="add-to-cart-btn">Agregar al Carrito</button>
 </div>
-<!-- TARJETA 22: COMBO MATERO -->
+<!-- TARJETA 19: COMBO MATERO -->
  <div class="product-card">
     <img src="img/Marroquineria/combo matero.png" alt="Combo Matero" class="product-img">
      <h3>Combo Matero</h3>
     <p class="price">$35.000</p>
     <button class="add-to-cart-btn">Agregar al Carrito</button>
 </div>
-<!-- TARJETA 23: mochilita-->
+<!-- TARJETA 20: mochilita-->
  <div class="product-card">
     <img src="img/Marroquineria/mochilitas.png" alt="Mochilita" class="product-img">
      <h3>Mochilita</h3>
     <p class="price">$24.000</p>
     <button class="add-to-cart-btn">Agregar al Carrito</button>
 </div>
-<!-- TARJETA 24: BALSAMO LABIAL-->
+<!-- TARJETA 21: BALSAMO LABIAL-->
  <div class="product-card">
     <img src="img/Cosmetologia/balsamo labial.jpg" alt="Balsamo Labial" class="product-img">
      <h3>Balsamo Labial</h3>
     <p class="price">$1.100</p>
     <button class="add-to-cart-btn">Agregar al Carrito</button>
 </div>
-<!-- TARJETA 25: CAPELINA DE BEBE-->
+<!-- TARJETA 22: CAPELINA DE BEBE-->
  <div class="product-card">
     <img src="img/Gorros/capelina de bebe.png" alt="Capelina de Bebé" class="product-img">
      <h3>Capelina de Bebé</h3>
     <p class="price">$3.000</p>
     <button class="add-to-cart-btn">Agregar al Carrito</button>
 </div>
-<!-- TARJETA 26: GORRITA DE BEBE-->
+<!-- TARJETA 23: GORRITA DE BEBE-->
  <div class="product-card">
     <img src="img/Gorros/gorrita de bebe.png" alt="Gorrita de Bebé" class="product-img">
      <h3>Gorrita de Bebé</h3>
     <p class="price">$4.500</p>
     <button class="add-to-cart-btn">Agregar al Carrito</button>
 </div>
-<!-- TARJETA 27: pulsera-->
+<!-- TARJETA 24: pulsera-->
  <div class="product-card">
-    <img src="img/Billuteri/pulsera.png" alt="Pulsera" class="product-img">
+    <img src="img/Billuteria/pulsera.png" alt="Pulsera" class="product-img">
      <h3>Pulsera</h3>
     <p class="price">$6.000</p>
     <button class="add-to-cart-btn">Agregar al Carrito</button>
 </div>
-<!-- TARJETA 28: CADENITAS-->
+<!-- TARJETA 25: CADENITAS-->
  <div class="product-card">
-    <img src="img/Billuteri/cadenitas.png" alt="Cadenitas" class="product-img">
+    <img src="img/Billuteria/cadenitas.png" alt="Cadenitas" class="product-img">
      <h3>Cadenitas</h3>
     <p class="price">$4.500</p>
     <button class="add-to-cart-btn">Agregar al Carrito</button>
 </div>
-<!-- TARJETA 29: JARRA TERMICA-->
+<!-- TARJETA 26: JARRA TERMICA-->
  <div class="product-card">
     <img src="img/Eñectrodomestico/jarra termica.png" alt="Jarra termica" class="product-img">
      <h3>Jarra Termica</h3>
     <p class="price">$22.000</p>
     <button class="add-to-cart-btn">Agregar al Carrito</button>
 </div>
-<!-- TARJETA 30: AURICULARES A65-->
+<!-- TARJETA 27: AURICULARES A65-->
  <div class="product-card">
     <img src="img/Audio/auriculares A 65.png" alt="Auriculares A 65" class="product-img">
      <h3>Auriculares A 65</h3>
     <p class="price">$8.000</p>
     <button class="add-to-cart-btn">Agregar al Carrito</button>
 </div>
- <!-- TARJETA 31: auriculares x 15-->
+ <!-- TARJETA 28: auriculares x 15-->
  <div class="product-card">
     <img src="img/Audio/auriculares x 15.png" alt="Auriculares x 15" class="product-img">
      <h3>auriculaluress x 15</h3>
     <p class="price">$10.000</p>
     <button class="add-to-cart-btn">Agregar al Carrito</button>
 </div>
-<!-- TARJETA 32: cafetera prensa-->
+<!-- TARJETA 29: cafetera prensa-->
  <div class="product-card">
     <img src="img/Eñectrodomestico/cafetera prensa.png" alt="Cafetera prensa" class="product-img">
      <h3>Cafetera prensa</h3>
     <p class="price">$20.000</p>
     <button class="add-to-cart-btn">Agregar al Carrito</button>
 </div>
-<!-- TARJETA 33: reloj-->
+<!-- TARJETA 30: reloj-->
  <div class="product-card">
-    <img src="img/Billuteri/reloj.png" alt="Reloj" class="product-img">
+    <img src="img/Billuteria/reloj.png" alt="Reloj" class="product-img">
      <h3>Reloj</h3>
     <p class="price">$8.000</p>
     <button class="add-to-cart-btn">Agregar al Carrito</button>
 </div>
-<!-- TARJETA 34: vaso stanley -->
+<!-- TARJETA 31: vaso stanley -->
  <div class="product-card">
     <img src="img/Bazar/vaso stanley.png" alt="Vaso Stanley" class="product-img">
      <h3>Vaso Stanley</h3>
     <p class="price">$29.000</p>
     <button class="add-to-cart-btn">Agregar al Carrito</button>
 </div>
-<!-- TARJETA 35: BOLSO UNIVERSITARIO -->
+<!-- TARJETA 32: BOLSO UNIVERSITARIO -->
  <div class="product-card">
     <img src="img/Marroquineria/bolso.universitario.png" alt="Bolso Universitario" class="product-img">
      <h3>Bolso Universitario</h3>
     <p class="price">$61.000</p>
     <button class="add-to-cart-btn">Agregar al Carrito</button>
 </div>
-<!-- TARJETA 36: BILLETERA PORTA CELULAR -->
+<!-- TARJETA 33: BILLETERA PORTA CELULAR -->
  <div class="product-card">
     <img src="img/Marroquineria/billetera porta celular.png" alt="Billetera Porta Celular" class="product-img">
      <h3>Billetera Porta Celular</h3>
     <p class="price">$12.000</p>
     <button class="add-to-cart-btn">Agregar al Carrito</button>
 </div>
-<!-- TARJETA 37 : CUBO MAGICO -->
+<!-- TARJETA 34 : CUBO MAGICO -->
  <div class="product-card">
     <img src="img/Juguetes/cubo magico.png" alt="Cubo Mágico" class="product-img">
      <h3>Cubo Mágico</h3>
     <p class="price">$900</p>
     <button class="add-to-cart-btn">Agregar al Carrito</button>
 </div>
-<!-- TARJETA 38 : AUTITOS COLA PINTO-->
+<!-- TARJETA 35 : AUTITOS COLA PINTO-->
  <div class="product-card">
     <img src="img/Juguetes/autitos cola pinto.png" alt="Autitos Cola Pinto" class="product-img">
      <h3>Autitos Cola Pinto</h3>
     <p class="price">$3.800</p>
     <button class="add-to-cart-btn">Agregar al Carrito</button>
 </div>
-<!-- TARJETA 39 : OFERTON TERMO INVICTA NEWELLS-->
+<!-- TARJETA 36 : OFERTON TERMO INVICTA NEWELLS-->
  <div class="product-card">
-    <img src="img/Bazar/oferton termo Invicta newells.png" alt="Termo Invicta Newells" class="product-img">
+    <img src="img/Bazar/ofertón termo Invicta newells.png" alt="Termo Invicta Newells" class="product-img">
      <h3>Termo Invicta Newells</h3>
     <p class="price">$10.000</p>
     <button class="add-to-cart-btn">Agregar al Carrito</button>
 </div>
-<!-- TARJETA 40 : TERMO INVICTA FRENZE 1.LTS-->
+<!-- TARJETA 37 : TERMO INVICTA FRENZE 1.LTS-->
  <div class="product-card">
     <img src="img/Bazar/Termo Invicta firenze 1.lts.png" alt="Termo Invicta Frenze 1.LTS" class="product-img">
      <h3>Termo Invicta Frenze 1.LTS</h3>
     <p class="price">$12.000</p>
     <button class="add-to-cart-btn">Agregar al Carrito</button>
 </div>
-<!-- TARJETA 41 : TERMO INVICTA TOP WAVE-->
+<!-- TARJETA 38 : TERMO INVICTA TOP WAVE-->
  <div class="product-card">
-    <img src="img/Bazar/termo-invicta-top-wave.png" alt="Termo Invicta Top Wave" class="product-img">
+    <img src="img/Bazar/termo invicta top wave.png" alt="Termo Invicta Top Wave" class="product-img">
      <h3>Termo Invicta Top Wave</h3>
     <p class="price">$12.000</p>
     <button class="add-to-cart-btn">Agregar al Carrito</button>
@@ -383,16 +360,12 @@
         ¿Tenés dudas con el stock, un precio o necesitás un producto que no ves acá? ¡Escribinos directamente a cualquiera de nuestras líneas de WhatsApp y te lo solucionamos al toque!
     </p>
     <div class="whatsapp-buttons">
-
-        <section class="whatsapp-section">
-           
-            <div class="whatsapp-buttons">
-                <!-- Enlace de ejemplo, cambiale los números por los reales de ella -->
-                <a href="https://wa.me/5492226409181" target="_blank" class="btn-whatsapp">🟢 542226409181 Atención al Público</a>
-                <a href="https://wa.me/5492226529158" target="_blank" class="btn-whatsapp">🟢 542226529158 Atención al Público</a>
-                <a href="https://wa.me/5491153199192" target="_blank" class="btn-whatsapp">🟢 541153199192 Atención al Público</a>
-            </div>
-        </section>
+        <!-- Enlace de ejemplo, cambiale los números por los reales de ella -->
+        <a href="https://wa.me/5492226409181" target="_blank" rel="noopener" class="btn-whatsapp">🟢 542226409181 Atención al Público</a>
+        <a href="https://wa.me/5492226529158" target="_blank" rel="noopener" class="btn-whatsapp">🟢 542226529158 Atención al Público</a>
+        <a href="https://wa.me/5491153199192" target="_blank" rel="noopener" class="btn-whatsapp">🟢 541153199192 Atención al Público</a>
+    </div>
+</section>
 <!-- SECCIÓN: REDES SOCIALES Y CANAL OFICIAL -->
 <section class="social-section" style="text-align: center; padding: 30px 20px; background-color: #111; border-top: 1px solid #222;">
     <h3 style="color: #ffffff; font-size: 18px; margin-bottom: 15px;">Seguinos en nuestras Redes</h3>
@@ -424,7 +397,7 @@
     </footer>
 
     <!-- Tu cable de lógica en JavaScript -->
- <script src="script.js"></script>
+ <script src="app.js"></script>
      <!-- 🛒 VENTANA FLOTANTE DEL CARRITO (CONECTADA CON TUS 3 VENDEDORAS) -->
 <div id="modal-carrito" style="display: none; position: fixed; top: 0; right: 0; width: 100%; max-width: 400px; height: 100%; background: #111; border-left: 2px solid #00ffcc; z-index: 10000; box-shadow: -5px 0 15px rgba(0,0,0,0.5); flex-direction: column; padding: 20px; color: white; overflow-y: auto;">
     
