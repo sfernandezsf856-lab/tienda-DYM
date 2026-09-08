@@ -53,16 +53,3 @@ const númerosWhatsApp = [
     "5491153199192"  // Cuñada
 ];
 
-function obtenerSiguienteWhatsApp() {
-    // Leemos cuál fue el último índice usado guardado en la memoria de la web
-    let indiceActual = parseInt(localStorage.getItem('ultimoIndiceWs')) || 0;
-    
-    // Calculamos el siguiente número (vuelve a 0 cuando llega al final)
-    let siguienteIndice = (indiceActual + 1) % númerosWhatsApp.length;
-    
-    // Guardamos el nuevo índice para la próxima venta
-    localStorage.setItem('ultimoIndiceWs', siguienteIndice);
-    
-    return númerosWhatsApp[indiceActual];
-}
-fetch('../data.json');

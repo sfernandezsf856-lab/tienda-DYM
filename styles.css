@@ -11,9 +11,7 @@
 body {
     background-color: #000000; /* Fondo negro de búnker para toda la web */
     color: #ffffff;
-    background-image: url('img/bg.png'); 
-    background-size: cover;
-    background-position: center;
+    
 }
 
 /* ==========================================
